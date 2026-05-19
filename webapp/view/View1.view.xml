@@ -2,5 +2,26 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+        <content> 
+            <Table id="empTable" items="{employees>/employees}">
+                <columns>
+                    <Column id="_IDGenColumn"><Text id="_IDGenText" text="ID"/></Column>
+                    <Column id="_IDGenColumn1" ><Text id="_IDGenText1"  text="First name"/></Column>
+                    <Column id="_IDGenColumn2" ><Text id="_IDGenText2" text="Last name"/></Column>
+                    <Column id="_IDGenColumn3" ><Text id="_IDGenText3" text="Email"/></Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem" >
+                        <cells>
+                            <Text id="_IDGenText4" text="{employees>id}"/>
+                            <Text id="_IDGenText5" text="{employees>firstName}" />
+                            <Text id="_IDGenText6" text="{employees>lastName}" />
+                            <Text id="_IDGenText7" text="{employees>email}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
     </Page>
 </mvc:View>
