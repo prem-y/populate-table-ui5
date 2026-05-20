@@ -1,0 +1,24 @@
+<mvc:View controllerName="project2.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page2" title="{i18n>title2}" showNavButton="true" navButtonPress=".onNavBack">
+        <content> 
+            <f:SimpleForm id="_IDGenSimpleForm" >
+                <f:content>
+                    <Label id="_IDGenLabel" text="ID"/>
+                    <Text id="_IDGenText8" text="{employees>id}"/>
+
+                    <Label id="_IDGenLabel1" text="First name" />
+                    <Text id="_IDGenText9" text="{employees>firstName}"/>
+
+                    <Label id="_IDGenLabel2" text="Last Name" />
+                    <Text id="_IDGenText10" text="{employees>lastName}"/>
+
+                    <Label id="_IDGenLabel3" text="Email" />
+                    <Text id="_IDGenText11" text="{employees>email}"/>
+                </f:content>
+            </f:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>

@@ -2,7 +2,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content> 
+        <content>
             <Table id="empTable" items="{employees>/employees}">
                 <columns>
                     <Column id="_IDGenColumn"><Text id="_IDGenText" text="ID"/></Column>
@@ -12,7 +12,7 @@
                 </columns>
 
                 <items>
-                    <ColumnListItem id="_IDGenColumnListItem" >
+                    <ColumnListItem id="_IDGenColumnListItem" type="Navigation" press=".onRowPress">
                         <cells>
                             <Text id="_IDGenText4" text="{employees>id}"/>
                             <Text id="_IDGenText5" text="{employees>firstName}" />

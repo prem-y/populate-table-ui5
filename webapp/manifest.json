@@ -38,7 +38,8 @@
       "minUI5Version": "1.148.0",
       "libs": {
         "sap.m": {},
-        "sap.ui.core": {}
+        "sap.ui.core": {},
+        "sap.ui.layout": {}
       }
     },
     "contentDensities": {
@@ -83,12 +84,21 @@
           "target": [
             "TargetView1"
           ]
+        },
+        {
+          "name": "RouteEmpDetails",
+          "pattern": "detail/{employeeId}",
+          "target": ["TargetEmpDetails"]
         }
       ],
       "targets": {
         "TargetView1": {
           "id": "View1",
           "name": "View1"
+        },
+        "TargetEmpDetails": {
+          "id": "DetailView",
+          "name": "DetailView"
         }
       }
     },
